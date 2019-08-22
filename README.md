@@ -1,6 +1,6 @@
 # Terraform Module: GitHub Organization Domain DNS Record
 
-> This repository is a [Terraform](https://terraform.io/) Module for managing AWS Route 53 [DNS Records](https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html) to enable verificiation of [GitHub Organization Domains](https://help.github.com/en/articles/verifying-your-organizations-domain).
+> This repository is a [Terraform](https://terraform.io/) Module for managing AWS Route 53 [DNS Records](https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html) to enable verification of [GitHub Organization Domains](https://help.github.com/en/articles/verifying-your-organizations-domain).
 
 ## Table of Contents
 
