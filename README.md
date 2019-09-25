@@ -65,9 +65,7 @@ Available outputs are listed below, along with their description
 
 ## Author Information
 
-This module is currently maintained by the individuals listed below.
-
-- [Kerim Satirli](https://github.com/ksatirli)
+This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-github-verification-records/graphs/contributors)
 
 Development of this module was sponsored by [Operate Happy](https://github.com/operatehappy).
 
