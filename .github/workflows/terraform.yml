@@ -1,0 +1,24 @@
+---
+name: Terraform
+true:
+  - pull_request
+jobs:
+  on-pull-request:
+    name: "On Pull Request"
+    runs-on: ubuntu-latest
+    steps:
+      -
+        env:
+          TF_ACTION_WORKING_DIR: "."
+        name: "Terraform - Format"
+        uses: hashicorp/terraform-github-actions/fmt@v0.4.4
+      -
+        env:
+          TF_ACTION_WORKING_DIR: "."
+        name: "Terraform - Init"
+        uses: hashicorp/terraform-github-actions/init@v0.4.4
+      -
+        env:
+          TF_ACTION_WORKING_DIR: "."
+        name: "Terraform - Validate"
+        uses: hashicorp/terraform-github-actions/validate@v0.4.4
