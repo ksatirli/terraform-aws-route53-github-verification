@@ -50,9 +50,9 @@ Available variables are listed below, along with their default values:
 
 Additionally, the following variables are generated as [locals](https://www.terraform.io/docs/configuration/locals.html):
 
-| key       | value                           |
-|-----------|---------------------------------|
-| zone_name | `${data.aws_route53_zone.name}` |
+| key       | value                        |
+|-----------|------------------------------|
+| zone_name | `data.aws_route53_zone.name` |
 
 ### Module Outputs
 
@@ -65,7 +65,7 @@ Available outputs are listed below, along with their description
 
 ## Author Information
 
-This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-workmail-records/graphs/contributors)
+This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-github-verification-records/graphs/contributors)
 
 Development of this module was sponsored by [Operate Happy](https://github.com/operatehappy).
 
