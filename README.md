@@ -1,10 +1,10 @@
-# Terraform Module: GitHub Organization Domain DNS Record
+# Terraform Module: GitHub Verification
 
 > This repository is a [Terraform](https://terraform.io/) Module for managing AWS Route 53 [DNS Records](https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html) to enable verification of [GitHub Organization Domains](https://help.github.com/en/articles/verifying-your-organizations-domain).
 
 ## Table of Contents
 
-- [Terraform Module: GitHub Organization Domain DNS Record](#terraform-module-github-organization-domain-dns-record)
+- [Terraform Module: GitHub Verification](#terraform-module-github-verification)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
   - [Dependencies](#dependencies)
@@ -27,15 +27,15 @@ This module depends on a correctly configured [AWS Provider](https://www.terrafo
 Add the module to your Terraform resources like so:
 
 ```hcl
-module "org-verification-record" {
-  source           = "operatehappy/route53-github-verification-record/aws"
+module "org-verification" {
+  source           = "operatehappy/route53-github-verification/aws"
   version          = "1.0.0"
   zone_id          = "Z3P5QSUBK4POTI"
   ownership_record = "38834dez61"
 }
 ```
 
-Then, fetch the module from the [Terraform Registry](https://registry.terraform.io/modules/operatehappy/route53-github-verification-records) using `terraform get`.
+Then, fetch the module from the [Terraform Registry](https://registry.terraform.io/modules/operatehappy/route53-github-verification) using `terraform get`.
 
 ### Module Variables
 
@@ -65,7 +65,7 @@ Available outputs are listed below, along with their description
 
 ## Author Information
 
-This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-github-verification-records/graphs/contributors)
+This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-github-verification/graphs/contributors)
 
 Development of this module was sponsored by [Operate Happy](https://github.com/operatehappy).
 
