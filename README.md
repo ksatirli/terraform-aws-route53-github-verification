@@ -29,7 +29,7 @@ Add the module to your Terraform resources like so:
 ```hcl
 module "org-verification" {
   source           = "operatehappy/route53-github-verification/aws"
-  version          = "1.0.0"
+  version          = "1.0.1"
   zone_id          = "Z3P5QSUBK4POTI"
   ownership_record = "38834dez61"
 }
