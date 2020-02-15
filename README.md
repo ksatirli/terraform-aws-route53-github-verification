@@ -9,8 +9,8 @@
   - [Requirements](#requirements)
   - [Dependencies](#dependencies)
   - [Usage](#usage)
-    - [Module Variables](#module-variables)
-    - [Module Outputs](#module-outputs)
+    - [Inputs](#inputs)
+    - [Outputs](#outputs)
   - [Author Information](#author-information)
   - [License](#license)
 
@@ -37,31 +37,21 @@ module "org-verification" {
 
 Then, fetch the module from the [Terraform Registry](https://registry.terraform.io/modules/operatehappy/route53-github-verification) using `terraform get`.
 
-### Module Variables
+### Inputs
 
-Available variables are listed below, along with their default values:
+| Name | Description | Type | Default |
+|------|-------------|------|---------|
+| github_organization | GitHub Organization identifier | `string` | n/a |
+| ownership_record | Ownership TXT Record | `string` | n/a |
+| zone_id | ID of the DNS Zone to store Records in | `string` | n/a |
+| record_ttl | TTL for all DNS records | `string` | `300` |
 
-| variable            | type   | description                            | default |
-|---------------------|--------|----------------------------------------|---------|
-| github_organization | string | GitHub Organization identifier         |         |
-| zone_id             | string | ID of the DNS Zone to store Records in |         |
-| record_ttl          | string | TTL for all DNS records                | `300`   |
-| ownership_record    | string | Ownership TXT Record                   |         |
+### Outputs
 
-Additionally, the following variables are generated as [locals](https://www.terraform.io/docs/configuration/locals.html):
-
-| key       | value                        |
-|-----------|------------------------------|
-| zone_name | `data.aws_route53_zone.name` |
-
-### Module Outputs
-
-Available outputs are listed below, along with their description
-
-| output      | description                                               |
-|-------------|-----------------------------------------------------------|
-| `ownership` | interpolated value of `aws_route53_record.ownership.name` |
-| `zone_name` | interpolated value of `local.zone_name`                   |
+| Name | Description |
+|------|-------------|
+| ownership | interpolated value of `aws_route53_record.ownership.name` |
+| zone_name | interpolated value of `local.zone_name` |
 
 ## Author Information
 
