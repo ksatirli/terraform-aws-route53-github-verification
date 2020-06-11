@@ -1,4 +1,4 @@
-##  (2020-02-24)
+# 1.0.1 (2020-02-24)
 
 * Cleanup (#7) ([9a92e04](https://github.com/operatehappy/terraform-aws-route53-github-verification/commit/9a92e04)), closes [#7](https://github.com/operatehappy/terraform-aws-route53-github-verification/issues/7)
 * updates README (#6) ([41d3ae4](https://github.com/operatehappy/terraform-aws-route53-github-verification/commit/41d3ae4)), closes [#6](https://github.com/operatehappy/terraform-aws-route53-github-verification/issues/6)
