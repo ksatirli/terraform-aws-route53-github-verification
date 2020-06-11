@@ -31,8 +31,8 @@ module "org-verification" {
   source              = "operatehappy/route53-github-verification/aws"
   version             = "1.0.2"
   github_organization = "operatehappy"
-  zone_id             = "Z3P5QSUBK4POTI"
   ownership_record    = "38834dez61"
+  zone_id             = "Z3P5QSUBK4POTI"
 }
 ```
 
