@@ -1,4 +1,8 @@
-# 1.0.3 (2020-06-11)
+# 1.1.0 (2020-09-04)
+
+* Updates provider version (#9) ([d3ee9cf](https://github.com/operatehappy/terraform-aws-route53-github-verification/commit/d3ee9cf)), closes [#9](https://github.com/operatehappy/terraform-aws-route53-github-verification/issues/9)
+
+## 1.0.3 (2020-06-11)
 
 * Updates docs (#8) ([4f7887d](https://github.com/operatehappy/terraform-aws-route53-github-verification/commit/4f7887d)), closes [#8](https://github.com/operatehappy/terraform-aws-route53-github-verification/issues/8)
 
