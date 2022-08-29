@@ -1,5 +1,8 @@
 # Terraform Module: GitHub Verification
 
+> **Warning**
+> This module has reached _End-of-Life_ status. A re-built version will be available via [ksatirli/terraform-aws-route53-github-verification](https://github.com/ksatirli/terraform-aws-route53-github-verification).
+
 > Terraform Module for managing AWS Route 53 DNS Records to enable verification of [GitHub Organization Domains](https://help.github.com/en/articles/verifying-your-organizations-domain).
 
 ## Table of Contents
