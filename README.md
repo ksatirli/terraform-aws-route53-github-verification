@@ -1,6 +1,6 @@
 # GitHub Verification
 
-> This Terraform Module manages DNS records for [GitHub Domain verification]((https://help.github.com/en/articles/verifying-your-organizations-domain).
+> This Terraform Module manages DNS records for [GitHub Domain verification](https://help.github.com/en/articles/verifying-your-organizations-domain).
 
 ## Table of Contents
 
