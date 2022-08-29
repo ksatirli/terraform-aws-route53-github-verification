@@ -40,8 +40,7 @@ For examples, see the [./examples](https://github.com/ksatirli/terraform-aws-rou
 
 | Name | Description |
 |------|-------------|
-| ownership | interpolated value of `aws_route53_record.ownership.name` |
-| zone_name | interpolated value of `local.zone_name` |
+| aws_route53_record | Exported Attributes for `aws_route53_record`. |
 <!-- END_TF_DOCS -->
 
 ## Author Information
