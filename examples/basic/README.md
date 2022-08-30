@@ -1,6 +1,6 @@
 # Example: `basic`
 
-This is a _basic_ example of the `terraform-aws-route53-workmail-records` module.
+This is a _basic_ example of the `terraform-aws-route53-github-organization` module.
 
 > **Note**
 > The example code shown in [./main.tf](./main.tf) is provided for illustration purposes only.
