@@ -1,30 +1,24 @@
-# GitHub Verification
+# GitHub Verification DNS Records
 
 > This Terraform Module manages DNS records for [GitHub Domain verification](https://help.github.com/en/articles/verifying-your-organizations-domain).
 
 ## Table of Contents
 
-- [GitHub Verification](#github-verification)
+- [GitHub Verification DNS Records](#github-verification-dns-records)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
-  - [Dependencies](#dependencies)
   - [Usage](#usage)
   - [Author Information](#author-information)
   - [License](#license)
 
 ## Requirements
 
-This module requires Terraform version `0.13.0` or newer.
-
-## Dependencies
-
-This module depends on a correctly configured [AWS Provider](https://www.terraform.io/docs/providers/aws/index.html) in your Terraform codebase.
+* Amazon Web Services (AWS) [Account](https://aws.amazon.com/account/)
+* Terraform `1.1.x` or newer.
 
 ## Usage
 
-Add the module to your Terraform resources like so:
-
-For examples, see the [./examples](https://github.com/ksatirli/terraform-aws-route53-github-verification/tree/main/examples) directory.
+For examples, see the [./examples](https://github.com/ksatirli/terraform-aws-route53-workmail-records/tree/main/examples) directory.
 
 <!-- BEGIN_TF_DOCS -->
 ### Inputs
