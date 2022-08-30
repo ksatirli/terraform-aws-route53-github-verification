@@ -1,67 +1,45 @@
-# Terraform Module: GitHub Verification
+# GitHub Verification DNS Records
 
-> **Warning**
-> This module has reached _End-of-Life_ status. A re-built version will be available via [ksatirli/terraform-aws-route53-github-verification](https://github.com/ksatirli/terraform-aws-route53-github-verification).
-
-> Terraform Module for managing AWS Route 53 DNS Records to enable verification of [GitHub Organization Domains](https://help.github.com/en/articles/verifying-your-organizations-domain).
+> This Terraform Module manages DNS records for [GitHub Domain verification](https://help.github.com/en/articles/verifying-your-organizations-domain).
 
 ## Table of Contents
 
-- [Terraform Module: GitHub Verification](#terraform-module-github-verification)
+- [GitHub Verification DNS Records](#github-verification-dns-records)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
-  - [Dependencies](#dependencies)
   - [Usage](#usage)
-    - [Inputs](#inputs)
-    - [Outputs](#outputs)
   - [Author Information](#author-information)
   - [License](#license)
 
 ## Requirements
 
-This module requires Terraform version `0.13.0` or newer.
-
-## Dependencies
-
-This module depends on a correctly configured [AWS Provider](https://www.terraform.io/docs/providers/aws/index.html) in your Terraform codebase.
+* Amazon Web Services (AWS) [Account](https://aws.amazon.com/account/)
+* Terraform `1.1.x` or newer.
 
 ## Usage
 
-Add the module to your Terraform resources like so:
+For examples, see the [./examples](https://github.com/ksatirli/terraform-aws-route53-workmail-records/tree/main/examples) directory.
 
-```hcl
-module "org-verification" {
-  source              = "operatehappy/route53-github-verification/aws"
-  version             = "1.1.0"
-  github_organization = "operatehappy"
-  ownership_record    = "38834dez61"
-  zone_id             = "Z3P5QSUBK4POTI"
-}
-```
-
-Then, fetch the module from the [Terraform Registry](https://registry.terraform.io/modules/operatehappy/route53-github-verification) using `terraform get`.
-
+<!-- BEGIN_TF_DOCS -->
 ### Inputs
 
-| Name | Description | Type | Default |
-|------|-------------|------|---------|
-| github_organization | GitHub Organization identifier | `string` | n/a |
-| ownership_record | Ownership TXT Record | `string` | n/a |
-| zone_id | ID of the DNS Zone to store Records in | `string` | n/a |
-| record_ttl | TTL for all DNS records | `string` | `300` |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| github_organization | GitHub Organization identifier | `string` | n/a | yes |
+| ownership_record | Ownership TXT Record | `string` | n/a | yes |
+| zone_id | ID of the DNS Zone to store Records in | `string` | n/a | yes |
+| record_ttl | TTL for all DNS records | `string` | `300` | no |
 
 ### Outputs
 
 | Name | Description |
 |------|-------------|
-| ownership | interpolated value of `aws_route53_record.ownership.name` |
-| zone_name | interpolated value of `local.zone_name` |
+| aws_route53_record | Exported Attributes for `aws_route53_record`. |
+<!-- END_TF_DOCS -->
 
 ## Author Information
 
-This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-github-verification/graphs/contributors).
-
-Development of this module was sponsored by [Operate Happy](https://github.com/operatehappy).
+This module is maintained by the contributors listed on [GitHub](https://github.com/ksatirli/terraform-aws-route53-github-verification/graphs/contributors).
 
 ## License
 
