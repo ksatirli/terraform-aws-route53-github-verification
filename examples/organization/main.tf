@@ -8,7 +8,8 @@ resource "aws_route53_zone" "example" {
 module "github_verification" {
   source = "../../"
 
-  github_owner     = "a-demo-organization"
-  ownership_record = "123...xyz"
-  zone_id          = aws_route53_zone.example.zone_id
+  github_owner        = "a-demo-user"
+  github_owner_suffix = "-o"
+  ownership_record    = "123...xyz"
+  zone_id             = aws_route53_zone.example.zone_id
 }
