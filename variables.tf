@@ -1,11 +1,12 @@
-variable "github_organization" {
+variable "github_owner" {
   type        = string
-  description = "GitHub Organization identifier"
+  description = "GitHub Owner identifier"
 }
 
-variable "zone_id" {
+variable "record_prefix" {
   type        = string
-  description = "ID of the DNS Zone to store Records in"
+  description = "Prefix for TXT Record"
+  default     = "_gh-"
 }
 
 variable "record_ttl" {
@@ -14,11 +15,12 @@ variable "record_ttl" {
   default     = 300
 }
 
-variable "ownership_record" {
+variable "validation_code" {
   type        = string
-  description = "Ownership TXT Record"
+  description = "GitHub Domain Validation String"
 }
 
-data "aws_route53_zone" "zone" {
-  zone_id = var.zone_id
+variable "zone_id" {
+  type        = string
+  description = "ID of the DNS Zone to store Records in"
 }
