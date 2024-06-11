@@ -29,9 +29,10 @@ For examples, see the [./examples](https://github.com/ksatirli/terraform-aws-rou
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| github_organization | GitHub Organization identifier | `string` | n/a | yes |
-| ownership_record | Ownership TXT Record | `string` | n/a | yes |
+| github_owner | GitHub Owner identifier | `string` | n/a | yes |
+| validation_code | GitHub Domain Validation String | `string` | n/a | yes |
 | zone_id | ID of the DNS Zone to store Records in | `string` | n/a | yes |
+| record_prefix | Prefix for TXT Record | `string` | `"_gh-"` | no |
 | record_ttl | TTL for all DNS records | `string` | `300` | no |
 
 ### Outputs
